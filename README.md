@@ -2,7 +2,7 @@
 
 A cyberpunk neon theme for the GRUB2 boot menu, inspired by the look of *Cyberpunk: Edgerunners*. Works on most Linux distributions that use GRUB2, including Fedora, Ubuntu, Debian, Arch and openSUSE.
 
-![Edgerunners GRUB theme preview](preview.png)
+![Edgerunners GRUB theme preview](assets/edgerunners_preview.png)
 
 
 ## Features

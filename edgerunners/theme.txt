@@ -1,0 +1,99 @@
+# Edgerunners - cyberpunk GRUB theme (neon yellow / cyan / magenta)
+# Artwork is 1920x1080. Every position is a whole-number percentage or pixel value.
+# Image patterns MUST include the extension, e.g. "select_*.png".
+
+# ---- global properties
+title-text: ""
+desktop-image: "background.png"
+desktop-image-scale-method: "crop"
+desktop-color: "#08080f"
+terminal-font: "Edgerunners Bold 15"
+terminal-box: "terminal_box_*.png"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
+# ---- header
++ label {
+  left = 8%
+  top = 6%
+  width = 70%
+  height = 56
+  text = "NIGHT CITY // BOOT SEQUENCE"
+  font = "Edgerunners Bold 44"
+  color = "#fcee09"
+  align = "left"
+}
++ label {
+  left = 8%
+  top = 13%
+  width = 70%
+  height = 30
+  text = "SELECT A SYSTEM TO JACK INTO"
+  font = "Edgerunners Bold 22"
+  color = "#00f0ff"
+  align = "left"
+}
+
+# ---- boot menu (frame = menu_*.png, highlight = select_*.png)
++ boot_menu {
+  left = 8%
+  top = 30%
+  width = 46%
+  height = 38%
+  item_font = "Edgerunners Bold 22"
+  item_color = "#00f0ff"
+  selected_item_font = "Edgerunners Bold 22"
+  selected_item_color = "#000000"
+  icon_width = 32
+  icon_height = 32
+  item_icon_space = 16
+  item_height = 44
+  item_padding = 12
+  item_spacing = 8
+  menu_pixmap_style = "menu_*.png"
+  selected_item_pixmap_style = "select_*.png"
+  scrollbar = true
+  scrollbar_width = 10
+  scrollbar_frame = "scrollbar_frame_*.png"
+  scrollbar_thumb = "scrollbar_thumb_*.png"
+}
+
+# ---- auto-boot countdown
++ progress_bar {
+  id = "__timeout__"
+  left = 8%
+  top = 72%
+  width = 46%
+  height = 14
+  show_text = false
+  fg_color = "#fcee09"
+  bg_color = "#1a1a2e"
+  border_color = "#00f0ff"
+  text_color = "#000000"
+}
++ label {
+  id = "__timeout__"
+  left = 8%
+  top = 75%
+  width = 46%
+  height = 24
+  text = "AUTO-BOOT IN %d SEC // PRESS ANY KEY TO ABORT"
+  font = "Edgerunners Bold 15"
+  color = "#ff2a6d"
+  align = "left"
+}
+
+# ---- footer
++ label {
+  left = 8%
+  top = 92%
+  width = 70%
+  height = 24
+  text = "[ENTER] JACK IN   [E] EDIT   [C] COMMAND LINE   [UP/DOWN] SELECT"
+  font = "Edgerunners Bold 15"
+  color = "#fcee09"
+  align = "left"
+}

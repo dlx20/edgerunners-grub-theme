@@ -4,16 +4,6 @@ A cyberpunk neon theme for the GRUB2 boot menu, inspired by the look of *Cyberpu
 
 ![Edgerunners GRUB theme preview](assets/edgerunners_preview.png)
 
-
-## Features
-
-- Neon yellow, cyan and magenta palette with a glitched sunset skyline
-- Original hooded netrunner character on a rooftop
-- Cut-corner menu frame, yellow selection bar and boot countdown bar
-- Neon icons for Linux, Windows and UEFI entries
-- Prebuilt fonts, so no extra tools are needed
-- One-command installer and uninstaller, with a backup of your GRUB settings
-
 ## Install
 
 ```bash
